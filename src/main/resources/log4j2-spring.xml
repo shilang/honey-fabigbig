@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Configuration>
+    <Properties>
+        <Property name="LOG_PATTERN">%date [%-5level] [%thread] %logger [%file:%line] - %msg%n%throwable{4}</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}" charset="UTF-8" noConsoleNoAnsi="true" />
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root includeLocation="true">
+            <AppenderRef ref="CONSOLE" />
+        </Root>
+    </Loggers>
+</Configuration>

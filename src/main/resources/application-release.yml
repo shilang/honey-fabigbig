@@ -1,0 +1,7 @@
+greenhouse:
+  fadada:
+    app-id: '000000'
+    enabled: true
+    secret: sklTKeEPv4X1By00000Qy8u8
+    verify-ca-url: https://extapi.fadada.com/api2/
+    version: 2.0
